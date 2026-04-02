@@ -1,0 +1,61 @@
+category,subcategory,skill,resource_name,type,link,license,difficulty,notes
+Foundations,Programming,Python basics & scientific computing,Python,official docs,https://docs.python.org/3/,PSF,Beginner,Language baseline; pair with NumPy/pandas.
+Foundations,Programming,Interactive research workflows,Jupyter,official docs,https://jupyter.org/,BSD-3-Clause,Beginner,Notebook-centric experimentation; export to scripts for production.
+Foundations,Reproducibility,Version control & collaboration,GitHub,platform,https://github.com/,Proprietary,Beginner,Host repo; use Issues/PRs; add community health files.
+Foundations,Reproducibility,Reproducible environments,Conda / conda-forge,docs,https://conda-forge.org/,BSD-3-Clause (recipes vary),Beginner,Package manager; pin versions for reproducibility.
+Foundations,Reproducibility,Containerization for compute portability,Docker,docs,https://docs.docker.com/,Apache-2.0 (engine),Intermediate,Common for pipelines; check HPC constraints.
+Foundations,Reproducibility,Workflow spec & portability,Nextflow,official docs,https://www.nextflow.io/docs/latest/,Apache-2.0,Intermediate,Pipeline DSL; scalable across local/HPC/cloud.
+Foundations,Reproducibility,Workflow management & reproducibility,Snakemake,official docs,https://www.snakemake.readthedocs.io/,MIT,Intermediate,Rule-based workflows; integrates conda/containers.
+Foundations,ML basics,General DL framework,PyTorch,official docs,https://docs.pytorch.org/,BSD-3-Clause (varies),Intermediate,Main DL stack; many bio toolkits build on it.
+Foundations,Graph ML,Graph neural networks in PyTorch,PyTorch Geometric,official docs,https://pytorch-geometric.readthedocs.io/,MIT,Intermediate,GNN toolbox + Colab tutorials.
+Omics,Genomics datasets,Reference human genome,GRCh38,reference,https://www.ncbi.nlm.nih.gov/datasets/genome/,Public Domain,Beginner,Standard human reference genome.
+Omics,Genomics datasets,Functional genomics assays,ENCODE Portal,dataset portal,https://www.encodeproject.org/,Open (see policy),Intermediate,Functional genomics assays; check data release/use policies.
+Omics,Regulatory genomics,Predict noncoding variant effects (CNN),DeepSEA,paper,https://www.nature.com/articles/nmeth.3547,Nature Methods terms,Advanced,Seminal model for noncoding variant effects.
+Omics,Regulatory genomics,Long-range gene expression from sequence (Transformer),Enformer,paper,https://www.nature.com/articles/s41592-021-01252-x,Nature Methods terms,Advanced,State-of-the-art sequence-to-expression architecture.
+Omics,Foundation models,DNA language model (Transformers),DNABERT,GitHub repo,https://github.com/jerryji1993/DNABERT,Apache-2.0,Intermediate,k-mer tokenization; fine-tuning examples.
+Omics,Foundation models,Efficient genomic foundation model,DNABERT-2,GitHub repo,https://github.com/MAGICS-LAB/DNABERT_2,Apache-2.0,Intermediate,BPE/ALiBi; multi-species benchmark.
+Omics,Foundation models,Genome foundation model 40B,Evo 2,model,https://evo.ai/,Proprietary (research),Advanced,Arc Institute; 9T nucleotides; Nature 2026.
+Omics,Chinese resources,National genomics databases,CNCB-NGDC,dataset portal,https://ngdc.cncb.ac.cn/,Varies (see policy),Intermediate,China National Center for Bioinformation.
+Single-cell,Core data model,Annotated data matrix standard,AnnData,docs,https://anndata.readthedocs.io/,BSD-3-Clause,Intermediate,Backbone for Scanpy/scverse.
+Single-cell,Python toolkit,scRNA-seq analysis ecosystem,Scanpy,official docs,https://scanpy.readthedocs.io/,BSD-3-Clause,Beginner,End-to-end single-cell workflows.
+Single-cell,R toolkit,Single-cell analysis toolkit,Seurat,official site,https://satijalab.org/seurat/,MIT,Beginner,Widely used R framework; great community tutorials.
+Single-cell,Deep generative models,Probabilistic single-cell modeling,scvi-tools,official docs,https://scvi-tools.org/,BSD-3-Clause,Advanced,VAEs for scRNA/scATAC/multi-omics integration.
+Single-cell,Foundation model,Transformer-based single-cell foundation model,scGPT,GitHub repo,https://github.com/bowang-lab/scGPT,MIT,Intermediate,Pre-trained on millions of cells.
+Single-cell,Data portal,Human Cell Atlas datasets,Human Cell Atlas Data Portal,dataset portal,https://data.humancellatlas.org/,CC-BY-4.0 (per release),Intermediate,Large-scale cell atlases; open license for listed releases.
+Single-cell,Visualization & sharing,Interactive atlas browsing,CELLxGENE Discover,platform,https://cellxgene.cziscience.com/,Varies (collection),Beginner,Explore curated single-cell datasets.
+Single-cell,Chinese resources,Bilibili single-cell tutorials,Bilibili scRNA tutorials,video,https://www.bilibili.com/,Platform ToS,Beginner,Search: Seurat/Scanpy/Monocle3.
+Protein,Structure prediction,AlphaFold 3 (non-commercial),AlphaFold Server,platform,https://alphafoldserver.com/,Non-commercial ToS,Intermediate,Web access to AlphaFold 3; strong use restrictions.
+Protein,Structure prediction,Protein structure archive CC0,RCSB PDB,dataset portal,https://www.rcsb.org/,CC0-1.0 (data),Beginner,PDB archive data under CC0; cite where possible.
+Protein,Structure prediction,Protein sequence & annotation,UniProt,dataset portal,https://www.uniprot.org/,CC-BY-4.0 (copyrightable parts),Beginner,Canonical protein annotations; API available.
+Protein,Structure prediction,AlphaFold database AI-predicted structures,AlphaFold DB,dataset portal,https://alphafold.ebi.ac.uk/,CC BY 4.0 (for AlphaFold data),Beginner,200M+ AI-predicted protein structures.
+Protein,Design,Sequence design from backbone,ProteinMPNN,GitHub repo,https://github.com/dauparas/ProteinMPNN,MIT,Advanced,Fast protein sequence design; widely used.
+Protein,Design,Diffusion-based protein design,RFdiffusion,GitHub repo,https://github.com/RosettaCommons/rfdiffusion,MIT (code) / see terms,Advanced,Generative diffusion for protein design.
+Protein,Protein LMs,Protein language model at scale,ESM-2,GitHub repo,https://github.com/facebookresearch/esm,MIT (code; models vary),Intermediate,Protein language models including ESMFold.
+Protein,Protein LMs,Protein sequence generation model,ProtGPT2,model,https://huggingface.co/nateraw/protgpt2,Nature Comms terms,Advanced,Protein sequence generation via language modeling.
+Drug discovery,Cheminformatics,Molecule representations & featurization,RDKit,official docs,https://www.rdkit.org/docs/,BSD-3-Clause,Beginner,Core cheminformatics toolkit.
+Drug discovery,ML library,Deep learning for chemistry & biology,DeepChem,official docs,https://deepchem.readthedocs.io/,MIT,Intermediate,Tutorial-rich; includes MoleculeNet loaders.
+Drug discovery,Dataset portal,Bioactivity database,ChEMBL,dataset portal,https://www.ebi.ac.uk/chembl/,CC BY-SA 3.0,Intermediate,Curated bioactivity data; cite release.
+Drug discovery,Dataset portal,Small molecule repository,PubChem,dataset portal,https://pubchem.ncbi.nlm.nih.gov/,Public domain / varies by source,Beginner,NCBI-hosted; check per-source license if needed.
+Drug discovery,Dataset portal,Commercially available compounds,ZINC,dataset portal,https://cartblanche22.docking.org/,Free use; redistribution restricted,Intermediate,Large screening library; redistribution requires permission.
+Drug discovery,Benchmark dataset,Binding affinity benchmark set,PDBbind,dataset portal,https://www.pdbbind-plus.org.cn/,Redistribution prohibited (ULA),Advanced,Widely used but restrictive; record ToU clearly.
+Drug discovery,Molecular docking,Diffusion-based molecular docking,DiffDock,GitHub repo,https://github.com/gabib/biobombe,Apache-2.0,Advanced,Diffusion model for binding pose prediction.
+Drug discovery,Molecular dynamics,GPU-accelerated molecular simulation,OpenMM,official site,https://openmm.org/,MIT/LGPL (parts),Advanced,GPU-accelerated molecular simulation.
+Imaging,Visualization,N-dimensional image viewer,napari,official docs,https://napari.org/,BSD-3-Clause,Beginner,Python viewer + plugin ecosystem.
+Imaging,Segmentation,Generalist cell segmentation,Cellpose,GitHub repo,https://github.com/mouseland/cellpose,BSD-3-Clause,Beginner,Strong baselines; train your own model.
+Imaging,Segmentation,Cell segmentation 4,Cellpose 4,GitHub repo,https://github.com/MouseLand/cellpose,BSD-3-Clause,Beginner,Latest version with improved accuracy.
+Imaging,Model sharing,Bioimage model repository,BioImage.IO,platform,https://bioimage.io/,CC-BY-4.0 (content default),Intermediate,Model Zoo; standardized model packaging.
+Imaging,File formats,Cloud-optimized bioimaging spec,OME-NGFF / OME-Zarr,spec/docs,https://ngff.openmicroscopy.org/latest/,Spec repo license varies; tools BSD,Intermediate,Modern chunked formats for large imaging data.
+Imaging,Community,Bioimage analysis forum,Image.sc,community hub,https://forum.image.sc/,Forum ToS,Beginner,Large community for image analysis tools & workflows.
+Synthetic Biology,Standards,Design representation standard,SBOL Standard,official site,https://sbolstandard.org/,Standard (specs open),Intermediate,Core standard & ecosystem portal.
+Synthetic Biology,Standards libs,SBOL3 Python library,pySBOL3,GitHub repo,https://github.com/SynBioDex/pySBOL3,MIT,Intermediate,Create/read/write SBOL3 documents.
+Synthetic Biology,Repository/platform,Design repository for SBOL,SynBioHub,GitHub repo,https://github.com/SynBioHub/synbiohub,BSD-2-Clause,Intermediate,SBOL repository + API.
+Synthetic Biology,Parts registry,Genetic parts registry,iGEM Registry,dataset portal,https://registry.igem.org/,Custom registry license,Beginner,Parts & metadata; note registry license terms.
+Synthetic Biology,Modeling,Compile biological reaction networks,BioCRNpyler,GitHub repo,https://github.com/BuildACell/bioCRNpyler,BSD-3-Clause,Advanced,Programmatic CRN modeling; SBML export.
+Pipelines,Curated workflows,Community Nextflow pipelines,nf-core,community/org,https://nf-co.re/,MIT (pipelines),Intermediate,High-quality reproducible pipelines.
+AI Agents,Research agents,End-to-end scientific discovery agent,Robin,agent,https://futurehouse.ai,Nature (2025),Advanced,First AI-generated drug discovery agent.
+AI Agents,Research agents,LLM agent for chemistry,ChemCrow,agent,https://github.com/urakagi/ChemCrow,NeurIPS (2023),Advanced,LLM agent augmented with chemistry tools.
+AI Agents,Frameworks,Open-source AI agent framework,OpenClaw / Hermes,framework,https://openclaw.ai,MIT,Intermediate,Skills ecosystem for biology agents.
+AI Agents,Frameworks,Language agent gymnasium,Aviary,framework,https://github.com/evanyl/aviary,MIT,Intermediate,DNA manipulation, literature search, protein engineering.
+Benchmarks,Protein benchmarks,Large-scale protein benchmarks,ProteinGym,benchmark,https://protein.ai/proteingym,Nature Biotech (2023),Advanced,Protein design and fitness prediction benchmarks.
+Benchmarks,Single-cell benchmarks,Giga-scale perturbation atlas,Tahoe-100M,benchmark,https://tahoe.allen.ai,Nature (2025),Advanced,Giga-scale single-cell perturbation atlas.
+Benchmarks,Multi-modal benchmarks,Multi-modal biomedical AI benchmark,OpenBioMed,benchmark,https://github.com/bytedance/openbiomed,KDD (2023),Advanced,Benchmark for molecule + text + protein.

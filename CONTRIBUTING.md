@@ -1,41 +1,86 @@
 # Contributing to Awesome AI4Biology
 
-Thank you for your interest in contributing! Please follow these guidelines.
+Thank you for your interest in contributing! This repository follows a **skills-first, curated** approach rather than just collecting links. Please read this guide carefully.
 
-## How to Contribute
+## 📋 Quality Standards
 
-### Adding New Tools or Models
+### Source Priority (in order)
+1. **Official documentation / official GitHub repository**
+2. **Peer-reviewed papers** (prefer Nature/Science/Cell tier)
+3. **Authoritative data portals** (UniProt, RCSB PDB, EBI, NCBI)
+4. **High-quality tutorials** from maintainers
+5. **Community-recommended resources**
 
-1. **Find the appropriate category** - Each section corresponds to a specific area of AI in biology.
-2. **Gather information**:
-   - Tool/model name
-   - Clear description (2-3 sentences)
-   - Official GitHub link or website
-   - Published paper (with journal/conference and year)
-3. **Format your addition** following the existing table format.
-4. **Submit a Pull Request** with your changes.
+❌ **Do not submit**:二手转载、无官方链接、已停止维护的资源
 
-### Reporting Issues
+### Required Fields for Every Resource
 
-- **Broken links**: Report which tool's link is broken and suggest alternatives if possible.
-- **Outdated information**: Provide updated information or corrections.
-- **Missing categories**: Suggest new categories that would benefit the community.
+When adding a resource, you MUST provide:
 
-### Quality Standards
+| Field | Description | Example |
+|-------|-------------|---------|
+| `category` | Main domain | `Protein`, `Omics`, `Drug discovery` |
+| `resource_name` | Official name | `AlphaFold`, `RDKit` |
+| `type` | Resource type | `GitHub repo`, `dataset portal`, `paper` |
+| `link` | Official URL | `https://github.com/...` |
+| `license` | License or terms | `MIT`, `CC0-1.0`, `Non-commercial ToS` |
+| `difficulty` | `Beginner`, `Intermediate`, or `Advanced` |
+| `notes` | Additional info, restrictions | `Non-commercial use only` |
 
-For inclusion, tools/models should:
-- Be AI/ML-based (not purely traditional methods)
-- Have documented performance/benchmarks
-- Be publicly available (open-source preferred)
-- Have a published paper or official release from a reputable source
+### ⚠️ Compliance Requirements
 
-## Pull Request Process
+**You MUST flag**:
+- **Controlled access data**: dbGaP, DUC, TCGA — add note: `Requires dbGaP authorization`
+- **Non-commercial restrictions**: AlphaFold Server, AlphaFold3 — add note: `Non-commercial use only`
+- **Redistribution prohibited**: PDBbind, some ZINC subsets — add note: `Redistribution prohibited`
+- **Custom licenses**: Rosetta, some commercial tools — clarify academic vs commercial
 
-1. Fork the repository
-2. Create a new branch for your feature/fix
-3. Make your changes
-4. Submit a PR with a clear description of your changes
+## 🚀 How to Contribute
 
-## Thank You!
+### Option 1: Add to resources.csv
 
-Every contribution, big or small, helps the AI4Biology community grow.
+Edit `resources/registry/resources.csv` and add your resource with all required fields.
+
+### Option 2: Add to a domain file
+
+Edit the relevant file in `resources/by-domain/` or `resources/by-method/`.
+
+### Option 3: Create an Issue
+
+Use the issue template to suggest new categories, tools, or learning paths.
+
+## 🔍 Review Checklist
+
+Before submitting a PR, verify:
+
+- [ ] Link is to official source (not a mirror or third-party copy)
+- [ ] License/terms are verified from official page
+- [ ] Restrictions are noted in `notes` field
+- [ ] Entry follows CSV format exactly
+- [ ] No duplicate entries (check by name and link)
+- [ ] Content is relevant to AI × Biology
+
+## 📁 File Structure
+
+```
+awesome-ai4biology/
+├── resources/
+│   ├── registry/
+│   │   └── resources.csv    # Single source of truth (machine-readable)
+│   ├── by-domain/           # Human-readable domain pages
+│   └── by-method/          # Human-readable method pages
+├── skills/
+│   └── skill-matrix.md     # Cross-domain skill framework
+├── learning-paths/         # Curated learning journeys
+└── scripts/                # Automation (lint, validate, generate)
+```
+
+## 💬 Getting Help
+
+- Open an Issue for questions
+- Join the discussion at [scverse Discourse](https://discourse.scverse.org/) for single-cell topics
+- For general bioinformatics: [Image.sc Forum](https://forum.image.sc/)
+
+## 🙏 Acknowledgements
+
+Contributors are listed in the GitHub commit history. Thank you to all who have contributed!

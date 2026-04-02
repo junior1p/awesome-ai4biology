@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resource Registry Schema",
+  "description": "Schema for the AI4Biology resources registry CSV",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "description": "Main category (Foundations, Omics, Single-cell, Protein, Drug discovery, Imaging, Synthetic Biology, AI Agents, Benchmarks)"
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Subcategory within the main category"
+    },
+    "skill": {
+      "type": "string",
+      "description": "Skill or task this resource supports"
+    },
+    "resource_name": {
+      "type": "string",
+      "description": "Name of the resource"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["official docs", "GitHub repo", "platform", "dataset portal", "paper", "model", "framework", "agent", "benchmark", "reference", "video", "course", "community hub", "community/org", "spec/docs", "docs", "official site"],
+      "description": "Type of resource"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the resource"
+    },
+    "license": {
+      "type": "string",
+      "description": "License or terms (use SPDX identifiers when possible). Include restrictions like 'Non-commercial ToS', 'Redistribution prohibited', 'Controlled access dbGaP' in notes."
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["Beginner", "Intermediate", "Advanced"],
+      "description": "Difficulty level"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional notes including restrictions, caveats, or helpful hints"
+    }
+  },
+  "required": ["category", "resource_name", "type", "link", "license", "difficulty"]
+}
