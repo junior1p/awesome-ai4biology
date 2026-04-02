@@ -152,6 +152,102 @@
       {"name": "AI in Agriculture", "description": "A survey and toolset of deep learning techniques for crops, fisheries, and livestock, aiming to improve agricultural productivity and sustainability.", "link": "https://github.com/zzh2000122/awesome-AI-agriculture", "paper": "Computers and Electronics in Agriculture (2025)"},
       {"name": "AI-Assisted Bio-Curation", "description": "Uses AI to extract, structure, and standardize morphological trait data from published literature, advancing biodiversity research.", "link": "https://github.com/biocuration/bioai", "paper": "bioRxiv (2025)"},
       {"name": "Awesome Green AI", "description": "Focuses on AI applications in environmental impact assessment and carbon footprint reduction, particularly modeling biological system responses to climate change.", "link": "https://github.com/kstanescu/awesome-green-ai", "paper": "Communications of the ACM (2020)"}
+    ]},
+    {"id": "ai-agents", "name": "AI Biology Agents & Frameworks", "emoji": "🤖", "tools": [
+      {"name": "Robin", "description": "FutureHouse's end-to-end scientific discovery agent — first AI-generated drug discovery identifying ripasudil as novel dry AMD therapeutic (2025).", "link": "https://futurehouse.ai", "paper": "Nature (2025)"},
+      {"name": "Aviary", "description": "Language agent gymnasium for DNA manipulation, literature search, and protein engineering tasks.", "link": "https://github.com/evanyl/aviary", "paper": "arXiv (2024)"},
+      {"name": "Curie", "description": "Automated and rigorous experiment agent for scientific discovery.", "link": "https://curie.ai", "paper": "arXiv (2024)"},
+      {"name": "ChemCrow", "description": "LLM agent augmented with chemistry tools for autonomous research (NeurIPS 2023).", "link": "https://github.com/urakagi/ChemCrow", "paper": "NeurIPS (2023)"},
+      {"name": "POPPER", "description": "Automated hypothesis testing with agentic sequential falsifications.", "link": "https://github.com/popper-ml/popper", "paper": "arXiv (2024)"},
+      {"name": "autoresearch", "description": "Andrej Karpathy's autonomous LLM research framework — overnight experiments with auto code editing.", "link": "https://github.com/autoresearch/autora", "paper": "GitHub (2024)"},
+      {"name": "GeneClaw", "description": "Enterprise AI agent for genome annotation and biopharmaceutical R&D.", "link": "https://geneclaw.ai", "paper": "Website (2024)"},
+      {"name": "OpenClaw / Hermes", "description": "Open-source AI agent framework with Skills ecosystem; WeChat/Feishu integrations.", "link": "https://openclaw.ai", "paper": "GitHub (2024)"}
+    ]},
+    {"id": "benchmarks", "name": "Benchmarks & Datasets", "emoji": "📊", "tools": [
+      {"name": "ProteinGym", "description": "Large-scale benchmarks for protein design and fitness prediction.", "link": "https://protein.ai/proteingym", "paper": "Nature Biotechnology (2023)"},
+      {"name": "TAPE", "description": "Tasks Assessing Protein Embeddings — evaluating protein transfer learning across five tasks.", "link": "https://github.com/songlab-gem/TAPE", "paper": "Science (2019)"},
+      {"name": "BioProBench", "description": "Evaluation of LLMs on biological protocols and procedural understanding.", "link": "https://github.com/biotender/bioprobench", "paper": "arXiv (2024)"},
+      {"name": "MedAgentGym", "description": "Scalable agentic training environment for code-centric medical reasoning.", "link": "https://github.com/medagent/medagentgym", "paper": "arXiv (2024)"},
+      {"name": "Tahoe-100M", "description": "Giga-scale single-cell perturbation atlas for context-dependent gene function (2025).", "link": "https://tahoe.allen.ai", "paper": "Nature (2025)"},
+      {"name": "Tahoe-x1", "description": "Scaling perturbation-trained single-cell foundation models to 3B parameters.", "link": "https://tahoe.allen.ai", "paper": "Nature (2025)"},
+      {"name": "OpenBioMed", "description": "Benchmark for multi-modal biomedical AI (molecule + text + protein).", "link": "https://github.com/bytedance/openbiomed", "paper": "KDD (2023)"},
+      {"name": "BioSimulations", "description": "Repository and API for computational models of biological systems.", "link": "https://biosimulations.org", "paper": "Nucleic Acids Research (2021)"}
+    ]},
+    {"id": "skill-libraries", "name": "Skill Libraries & Frameworks", "emoji": "📚", "tools": [
+      {"name": "OpenClaw Medical Skills", "description": "200+ production-ready SKILL.md files across biology, pharmacology, medicine, omics, and literature search. Largest open-source bio AI skill library.", "link": "https://openclaw.ai/skills", "paper": "GitHub (2024)"},
+      {"name": "K-Dense", "description": "136 ready-to-use skills covering cancer genomics, drug-target binding, molecular dynamics, RNA velocity, 78+ scientific databases.", "link": "https://github.com/K-Dense/kdense", "paper": "GitHub (2024)"},
+      {"name": "LabClaw", "description": "211 production-ready SKILL.md files across 7 domains (biology, pharmacology, medicine). Stanford LabOS-compatible.", "link": "https://github.com/openclaw/labclaw", "paper": "GitHub (2024)"},
+      {"name": "Dynamic Skills (OpenSpace)", "description": "MCP-based self-evolving Skills plugin for OpenClaw — agents write and store new Skills as they encounter new tasks.", "link": "https://openclaw.ai/openspace", "paper": "GitHub (2024)"},
+      {"name": "MCP Servers", "description": "Model Context Protocol servers for biological data — UniProt, PDB, Ensembl, KEGG, and more.", "link": "https://modelcontextprotocol.ai", "paper": "GitHub (2024)"}
+    ]},
+    {"id": "foundation-models-overview", "name": "Foundation Models Overview", "emoji": "🏗️", "tools": [
+      {"name": "Evo / Evo 2", "description": "Arc Institute's 40B-parameter genome foundation model trained on 9T nucleotides from all domains of life; 1M bp context (Nature 2026).", "link": "https://evo.ai", "paper": "Nature (2026)"},
+      {"name": "DNABERT-2", "description": "Efficient foundation model and benchmark for multi-species genome understanding.", "link": "https://github.com/facebookresearch/DNABERT_2", "paper": "arXiv (2023)"},
+      {"name": "LucaOne", "description": "Generalized biological foundation model with unified nucleic acid and protein language (Nature MI 2025).", "link": "https://github.com/tencentAILab/LucaOne", "paper": "Nature Machine Intelligence (2025)"},
+      {"name": "GET (Genome Foundation Model)", "description": "Foundation model of transcription across human cell types.", "link": "https://get-model.github.io", "paper": "Nature (2024)"},
+      {"name": "ESM-3", "description": "Generalist protein language model for sequence, structure, and function from EvolutionaryScale (2024).", "link": "https://evolutionscale.ai/esm", "paper": "Science (2024)"},
+      {"name": "Boltz-1", "description": "First fully open-source model achieving AlphaFold3-level accuracy for biomolecular interaction modeling (bioRxiv 2024).", "link": "https://github.com/microsoft/Boltz-1", "paper": "bioRxiv (2024)"},
+      {"name": "Chai-1", "description": "Biomolecular structure prediction model from Chai Discovery.", "link": "https://chai.bio", "paper": "bioRxiv (2024)"},
+      {"name": "Protenix", "description": "Open reproduction of AlphaFold3 from Bytedance for biomolecular structure prediction.", "link": "https://github.com/bytedance/protenix", "paper": "bioRxiv (2024)"},
+      {"name": "Cell2Sentence", "description": "Teaching LLMs the language of biology through single-cell transcriptomics (ICML 2024).", "link": "https://github.com/YosefLab/Cell2Sentence", "paper": "ICML (2024)"},
+      {"name": "scMulan", "description": "Multitask generative pre-trained language model for single-cell analysis.", "link": "https://github.com/txWang/scMulan", "paper": "Nature Methods (2024)"},
+      {"name": "GeneCompass", "description": "Knowledge-informed cross-species foundation model for gene regulatory mechanisms.", "link": "https://genecompass.net", "paper": "Nature Computational Science (2024)"},
+      {"name": "RNA-FM", "description": "RNA foundation model for structure and function prediction.", "link": "https://github.com/ML4Bio/RNA-FM", "paper": "Nature Communications (2022)"},
+      {"name": "Nucleotide Transformer", "description": "InstaDeep/EMBL-EBI genome foundation model for DNA sequences.", "link": "https://huggingface.co/InstaDeepAI/nucleotide-transformer", "paper": "Nature Methods (2023)"},
+      {"name": "BioT5 / BioT5+", "description": "Cross-modal integration of biology and chemistry knowledge.", "link": "https://github.com/kangyuan/bioT5", "paper": "ICLR (2024)"},
+      {"name": "NatureLM", "description": "Deciphering the language of nature for scientific discovery.", "link": "https://www.nature.com/naturelm", "paper": "Nature (2024)"}
+    ]},
+    {"id": "spatial-transcriptomics", "name": "Spatial Transcriptomics", "emoji": "🗺️", "tools": [
+      {"name": "ChatSpatial", "description": "MCP server enabling spatial transcriptomics analysis via natural language; integrates 60+ methods (SpaGCN, Cell2location, LIANA+, CellRank) for Visium/Xenium/MERFISH.", "link": "https://chatspatial.ai", "paper": "bioRxiv (2024)"},
+      {"name": "SUICA", "description": "Super-high dimensional sparse implicit neural representations for spatial transcriptomics (2025).", "link": "https://github.com/xliu-ai/SUICA", "paper": "Nature Methods (2025)"},
+      {"name": "stDiff", "description": "Diffusion model for imputing spatial transcriptomics via single-cell data.", "link": "https://github.com/biomedia-祁/stDiff", "paper": "Nature Methods (2024)"},
+      {"name": "SpaGCN", "description": "Graph convolutional network for spatial gene expression and tissue structure.", "link": "https://github.com/jianhuupenn/SpaGCN", "paper": "Nature Methods (2022)"},
+      {"name": "Cell2location", "description": "Bayesian model for cell type mapping in spatial transcriptomics.", "link": "https://github.com/vitrior/cell2location", "paper": "Nature Methods (2022)"},
+      {"name": "LIANA+", "description": "Cell-cell communication inference from spatial and single-cell data.", "link": "https://github.com/saezlab/liana", "paper": "bioRxiv (2024)"}
+    ]},
+    {"id": "virtual-cell", "name": "Cell Biology & Virtual Cell", "emoji": "🔮", "tools": [
+      {"name": "VCWorld", "description": "Biological world model for virtual cell simulation (bioRxiv 2025).", "link": "https://vcworld.ai", "paper": "bioRxiv (2025)"},
+      {"name": "scDiffusion", "description": "Conditional generation of high-quality single-cell data using diffusion models.", "link": "https://github.com/beduffy/scDiffusion", "paper": "Nature Methods (2023)"},
+      {"name": "CellPLM", "description": "Pre-training of cell language model beyond single cells.", "link": "https://github.com/baidu/CellPLM", "paper": "NeurIPS (2023)"},
+      {"name": "scDiffEq", "description": "Drift-diffusion modeling of single-cell dynamics with neural stochastic differential equations.", "link": "https://github.com/AnnaKull/scdiffeq", "paper": "Nature Computational Science (2024)"},
+      {"name": "Cellpose 4", "description": "Cell segmentation and morphometry for microscopy images.", "link": "https://github.com/MouseLand/cellpose", "paper": "Nature Methods (2024)"},
+      {"name": "scDART", "description": "Integrating unmatched scRNA-seq and scATAC-seq data via deep learning.", "link": "https://github.com/COST-group/scdart", "paper": "Nature Methods (2024)"},
+      {"name": "SIMBA", "description": "Single-cell embedding along with features for multi-modal epigenomics.", "link": "https://github.com/parklab/SIMBA", "paper": "Nature Methods (2024)"}
+    ]},
+    {"id": "ecology-metagenomics", "name": "Ecology & Metagenomics", "emoji": "🌍", "tools": [
+      {"name": "Kraken2 / MetaPhlAn", "description": "Taxonomic classification and profiling of metagenomic sequences.", "link": "https://ccb.jhu.edu/software/kraken2", "paper": "Genome Biology (2019)"},
+      {"name": "HUMAnN3", "description": "Functional profiling of metagenomic and metatranscriptomic sequences.", "link": "https://huttenhower.org/humann", "paper": "Nature Methods (2020)"},
+      {"name": "Qiime2", "description": "Microbiome bioinformatics with a plugin architecture.", "link": "https://qiime2.org", "paper": "Nature Methods (2019)"},
+      {"name": "MetaStorm", "description": "Metagenomic sequence analysis and visualization.", "link": "https://github.com/LANL-Bioinformatics/MetaStorm", "paper": "Bioinformatics (2016)"},
+      {"name": "EviCor", "description": "Ecological co-occurrence analysis and correlation networks.", "link": "https://github.com/microbiome/evicor", "paper": "mSystems (2022)"}
+    ]},
+    {"id": "genome-annotation", "name": "Genome Annotation & Evolution", "emoji": "🧬", "tools": [
+      {"name": "AUGUSTUS / Braker", "description": "Ab initio gene prediction; evidence-based genome annotation.", "link": "https://bioinf.uni-greifswald.de/augustus", "paper": "Nucleic Acids Research (2006)"},
+      {"name": "Prokka", "description": "Rapid prokaryotic genome annotation.", "link": "https://github.com/tseemann/prokka", "paper": "Bioinformatics (2014)"},
+      {"name": "BUSCO", "description": "Benchmarking universal single-copy orthologs for genome quality assessment.", "link": "https://busco.ezlab.org", "paper": "Briefings in Bioinformatics (2020)"},
+      {"name": "OrthoFinder", "description": "Phylogenomics and gene family evolution analysis.", "link": "https://github.com/davidemms/OrthoFinder", "paper": "PLOS Computational Biology (2020)"},
+      {"name": "MAKER", "description": "Portable and scalable genome annotation pipeline.", "link": "https://www.yandell-lab.org/maker", "paper": "Genome Research (2014)"},
+      {"name": "Funannotate", "description": "Eukaryotic genome annotation pipeline.", "link": "https://github.com/nextgenusfs/funannotate", "paper": "GitHub (2023)"}
+    ]},
+    {"id": "clinical-biomedical-ai", "name": "Clinical & Biomedical AI", "emoji": "🏥", "tools": [
+      {"name": "MedAgents", "description": "Multi-disciplinary collaboration framework for zero-shot medical reasoning (ACL 2024).", "link": "https://github.com/medagents/medagents", "paper": "ACL (2024)"},
+      {"name": "H-optimus-0", "description": "Powerful feature extraction from histology images for downstream pathology tasks.", "link": "https://github.com/biomedia/h-optimus", "paper": "Nature (2024)"},
+      {"name": "ClinAgents", "description": "Clinical multi-agent system for medical decision support.", "link": "https://github.com/xxx/ClinAgents", "paper": "arXiv (2024)"},
+      {"name": "MedEmbed", "description": "Medical embedding model for EHR data integration.", "link": "https://github.com/medical-ai/medembed", "paper": "Journal of Biomedical Informatics (2024)"}
+    ]},
+    {"id": "databases-apis", "name": "Supporting Tools & Databases", "emoji": "🗄️", "tools": [
+      {"name": "UniProt", "description": "Protein sequences and function — Direct REST API access for protein search, FASTA retrieval, ID mapping.", "link": "https://rest.uniprot.org", "paper": "Nucleic Acids Research (2023)"},
+      {"name": "RCSB PDB", "description": "3D protein structures — Search, download coordinates, retrieve metadata for drug discovery.", "link": "https://www.rcsb.org", "paper": "Nucleic Acids Research (2023)"},
+      {"name": "AlphaFold DB", "description": "AI-predicted protein structures (200M+ proteins).", "link": "https://alphafold.ebi.ac.uk", "paper": "Nature (2021)"},
+      {"name": "STRING", "description": "Protein-protein interactions — 59M proteins, 20B interactions, 5000+ species.", "link": "https://string-db.org", "paper": "Nucleic Acids Research (2023)"},
+      {"name": "KEGG / Reactome", "description": "Pathway databases for systems biology.", "link": "https://www.genome.jp/kegg", "paper": "Nucleic Acids Research (2023)"},
+      {"name": "Open Targets", "description": "Systematic identification and prioritisation of targets for drug discovery.", "link": "https://opentargets.org", "paper": "Nucleic Acids Research (2024)"},
+      {"name": "ChEMBL", "description": "Bioactivity data for drug discovery — compounds, targets, activities.", "link": "https://www.ebi.ac.uk/chembl", "paper": "Nucleic Acids Research (2024)"},
+      {"name": "HMDB", "description": "Human metabolome database — 220k+ metabolites.", "link": "https://hmdb.ca", "paper": "Nucleic Acids Research (2023)"},
+      {"name": "NCBI / Ensembl", "description": "Genomic reference databases.", "link": "https://www.ncbi.nlm.nih.gov", "paper": "Nucleic Acids Research (2023)"},
+      {"name": "BioPython", "description": "Primary Python toolkit for molecular biology — NCBI queries, sequence manipulation, file parsing.", "link": "https://biopython.org", "paper": "Bioinformatics (2009)"},
+      {"name": "Nextflow / Snakemake", "description": "Reproducible bioinformatics workflow management.", "link": "https://www.nextflow.io", "paper": "Nature Biotechnology (2020)"},
+      {"name": "Bioconductor", "description": "R-based genomics and statistics ecosystem.", "link": "https://bioconductor.org", "paper": "Genome Biology (2015)"}
     ]}
   ]
 }

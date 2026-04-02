@@ -6,30 +6,41 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![License: CC0](https://img.shields.io/badge/License-CC0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Artificial intelligence is transforming every corner of biology — from predicting protein structures with atomic accuracy to decoding the regulatory grammar of genomes. This repository aims to be a comprehensive, community-driven collection of AI for Biology skills, tools, models, and platforms across all major sub-fields.
 
 ## 📋 Table of Contents
 
-- [Protein Structure Prediction and Design](#protein-structure-prediction-and-design)
+- [Protein Structure Prediction and Design](#protein-structure-prediction)
 - [Protein Language Models](#protein-language-models)
-- [Protein Function Prediction and Annotation](#protein-function-prediction-and-annotation)
-- [Protein-Protein Interaction Prediction](#protein-protein-interaction-prediction)
-- [Antibody Design and Immunology](#antibody-design-and-immunology)
-- [Molecular Dynamics and Simulation](#molecular-dynamics-and-simulation)
-- [Genomics and Variant Analysis](#genomics-and-variant-analysis)
-- [Transcriptomics and Single-Cell Analysis](#transcriptomics-and-single-cell-analysis)
+- [Protein Function Prediction and Annotation](#protein-function-prediction)
+- [Protein-Protein Interaction Prediction](#protein-protein-interaction)
+- [Antibody Design and Immunology](#antibody-design)
+- [Molecular Dynamics and Simulation](#molecular-dynamics)
+- [Genomics and Variant Analysis](#genomics)
+- [Transcriptomics and Single-Cell Analysis](#single-cell)
 - [Epigenetics](#epigenetics)
-- [RNA Structure and Function Prediction](#rna-structure-and-function-prediction)
-- [CRISPR and Gene Editing](#crispr-and-gene-editing)
-- [Multi-Omics Integration](#multi-omics-integration)
-- [Drug Discovery and Molecular Generation](#drug-discovery-and-molecular-generation)
+- [RNA Structure and Function Prediction](#rna)
+- [CRISPR and Gene Editing](#crispr)
+- [Multi-Omics Integration](#multi-omics)
+- [Drug Discovery and Molecular Generation](#drug-discovery)
 - [Biomedical NLP](#biomedical-nlp)
-- [Biological Image Analysis](#biological-image-analysis)
+- [Biological Image Analysis](#bio-image)
 - [Synthetic Biology](#synthetic-biology)
-- [Metabolomics and Systems Biology](#metabolomics-and-systems-biology)
-- [Evolution and Phylogenetics](#evolution-and-phylogenetics)
-- [Emerging Directions](#emerging-directions)
+- [Metabolomics and Systems Biology](#metabolomics)
+- [Evolution and Phylogenetics](#evolution)
+- [Emerging Directions](#emerging)
+- [AI Biology Agents & Frameworks](#ai-agents)
+- [Benchmarks & Datasets](#benchmarks)
+- [Skill Libraries & Frameworks](#skill-libraries)
+- [Foundation Models Overview](#foundation-models-overview)
+- [Spatial Transcriptomics](#spatial-transcriptomics)
+- [Cell Biology & Virtual Cell](#virtual-cell)
+- [Ecology & Metagenomics](#ecology-metagenomics)
+- [Genome Annotation & Evolution](#genome-annotation)
+- [Clinical & Biomedical AI](#clinical-biomedical-ai)
+- [Supporting Tools & Databases](#databases-apis)
 
 ---
 
@@ -55,7 +66,7 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 | ESM (Evolutionary Scale Modeling) | A suite of transformer-based models (ESM-1b, ESM-2) trained on hundreds of millions of protein sequences to capture evolutionary and structural information. | [GitHub](https://github.com/facebookresearch/esm) | PNAS (2021) |
 | ProtTrans | A collection of massive protein language models (ProtBERT, ProtT5) trained using various architectures to provide state-of-the-art protein representations. | [GitHub](https://github.com/agemagician/ProtTrans) | IEEE TPAMI (2021) |
 | ProGen / ProGen2 | LLMs for protein generation that can be controlled by specifying protein properties or families, enabling the design of functional artificial proteins. | [GitHub](https://github.com/salesforce/ProGen) | Nature Biotechnology (2023) |
-| ProtGPT2 | An autoregressive transformer model trained on the entire protein sequence space, capable of generating de novo protein sequences following natural principles. | [HuggingFace](https://huggingface.co/nateraw/protgpt2) | Nature Communications (2022) |
+| ProtGPT2 | An autoregressive transformer model trained on the entire protein sequence space, capable of generating de novo protein sequences following natural principles. | [Link](https://huggingface.co/nateraw/protgpt2) | Nature Communications (2022) |
 | Ankh | An optimized protein language model focusing on general-purpose protein modeling with high efficiency. | [GitHub](https://github.com/calico/anKh) | arXiv (2023) |
 | xTrimoPGLM | A unified 100B-scale pre-trained transformer designed to decipher the language of proteins, supporting both representation and generation tasks. | [GitHub](https://github.com/gaoeason/xTrimoPGLM) | arXiv (2024) |
 
@@ -67,7 +78,7 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 |------|-------------|------|-------|
 | DeepFRI | A Graph Convolutional Network (GCN) method for predicting protein functions (GO terms) by integrating sequence and structural information. | [GitHub](https://github.com/flat逆/DeepFRI) | Nature Communications (2021) |
 | DeepGOPlus | Combines deep CNNs with sequence similarity-based predictions to provide accurate Gene Ontology (GO) annotations. | [GitHub](https://github.com/bio-ontology-research-group/deepgoplus) | Bioinformatics (2020) |
-| NetGO | A web server for high-accuracy protein function prediction that integrates multiple network-based and sequence-based features. | [Website](http://cadd.gsu.edu.tw/NetGO) | Nucleic Acids Research (2019) |
+| NetGO | A web server for high-accuracy protein function prediction that integrates multiple network-based and sequence-based features. | [Link](http://cadd.gsu.edu.tw/NetGO) | Nucleic Acids Research (2019) |
 | ProteinBERT | A universal deep-learning model for protein sequence and function prediction using a unique architecture to handle very long sequences. | [GitHub](https://github.com/nadavbra/protein_bert) | Bioinformatics (2022) |
 | CleanProtein | A framework for protein function prediction that focuses on cleaning and denoising protein data to improve AI-driven annotations. | [GitHub](https://github.com/nannadm/cleanprotein) | arXiv (2022) |
 
@@ -117,11 +128,11 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 | DeepVariant | Uses deep CNNs to call genetic variants from NGS data, greatly improving variant detection accuracy. | [GitHub](https://github.com/google/deepvariant) | Nature Biotechnology (2018) |
 | SpliceAI | A deep learning tool by Illumina that predicts splice sites from DNA sequences, identifying cryptic splicing variants causing diseases. | [GitHub](https://github.com/Illumina/SpliceAI) | Cell (2019) |
 | Enformer | A Transformer-based architecture that predicts gene expression and chromatin states using long-range genomic interactions up to 100kb. | [GitHub](https://github.com/Interverse/Enformer) | Nature (2021) |
-| CADD | Combined Annotation Dependent Depletion — uses machine learning to integrate multiple annotations for scoring the deleteriousness of human genetic variants. | [Website](https://cadd.gs.washington.edu) | Nature Genetics (2014) |
+| CADD | Combined Annotation Dependent Depletion — uses machine learning to integrate multiple annotations for scoring the deleteriousness of human genetic variants. | [Link](https://cadd.gs.washington.edu) | Nature Genetics (2014) |
 | Sei | A deep learning framework predicting the effects of sequence alterations on 21,907 genomic features and classifying them into regulatory sequence categories. | [GitHub](https://github.com/FunctionFuture/sei) | Nature Genetics (2022) |
 | Clair3 | A variant calling tool optimized for long-read sequencing (e.g., Oxford Nanopore), combining neural networks and ensemble learning. | [GitHub](https://github.com/HKU-BAL/Clair3) | Nature Communications (2022) |
-| AlphaGenome | A unified DNA sequence model (2025) that predicts thousands of functional genomic features from 1Mb input sequences. | [Website](https://google.com/alphagenome) | Nature (2025) |
-| popEVE | An AI model (2025) for predicting the disease-causing potential of rare variants in patient genomes. | [Website](https://popeve.org) | Nature Genetics (2025) |
+| AlphaGenome | A unified DNA sequence model (2025) that predicts thousands of functional genomic features from 1Mb input sequences. | [Link](https://google.com/alphagenome) | Nature (2025) |
+| popEVE | An AI model (2025) for predicting the disease-causing potential of rare variants in patient genomes. | [Link](https://popeve.org) | Nature Genetics (2025) |
 
 ---
 
@@ -143,11 +154,11 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 
 | Name | Description | Link | Paper |
 |------|-------------|------|-------|
-| DeepSEA | A deep learning sequence model that directly predicts chromatin features (TF binding, histone modifications) from DNA sequences. | [Website](http://deepsea.princeton.edu) | Nature Methods (2015) |
-| ChromHMM | An HMM-based tool for automatically learning and characterizing chromatin states from multiple histone modification datasets. | [Website](https://egg2.russelllab.org) | Nature Methods (2012) |
+| DeepSEA | A deep learning sequence model that directly predicts chromatin features (TF binding, histone modifications) from DNA sequences. | [Link](http://deepsea.princeton.edu) | Nature Methods (2015) |
+| ChromHMM | An HMM-based tool for automatically learning and characterizing chromatin states from multiple histone modification datasets. | [Link](https://egg2.russelllab.org) | Nature Methods (2012) |
 | DeepCpG | Uses deep neural networks to predict single-cell DNA methylation states, integrating local sequence and neighboring methylation information. | [GitHub](https://github.com/PMBio/deepcpg) | Genome Biology (2017) |
 | Basenji | A deep CNN for predicting genome-wide DNA regulatory activity (DNase-seq, ChIP-seq signals). | [GitHub](https://github.com/calico/basenji) | Genome Research (2018) |
-| EpiMap | Integrates thousands of epigenomic maps and uses deep learning to predict enhancer activity across tissues and cell types. | [Website](https://www.biolincc.org/epimap) | Nature (2021) |
+| EpiMap | Integrates thousands of epigenomic maps and uses deep learning to predict enhancer activity across tissues and cell types. | [Link](https://www.biolincc.org/epimap) | Nature (2021) |
 | DeepChrome | Uses CNN to predict gene expression levels from histone modification features in promoter regions. | [GitHub](https://github.com/QQ517/DeePromo) | Bioinformatics (2016) |
 
 ---
@@ -158,10 +169,10 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 |------|-------------|------|-------|
 | SPOT-RNA | Uses ensemble deep learning and transfer learning to predict RNA secondary structures, significantly improving non-canonical base pair prediction. | [GitHub](https://github.com/cyanobacterium/SPOT-RNA) | Nature Communications (2019) |
 | EternaFold | An RNA secondary structure prediction model trained through multi-task learning and crowdsourced data (Eterna game) with strong generalization. | [GitHub](https://github.com/eternagame/EternaFold) | PLOS Computational Biology (2020) |
-| RNAfold | A classic RNA secondary structure prediction tool (part of ViennaRNA), based on thermodynamic models and commonly used as a benchmark for AI models. | [Website](https://www.tbi.univie.ac.at/RNA) | Algorithms for Molecular Biology (2011) |
+| RNAfold | A classic RNA secondary structure prediction tool (part of ViennaRNA), based on thermodynamic models and commonly used as a benchmark for AI models. | [Link](https://www.tbi.univie.ac.at/RNA) | Algorithms for Molecular Biology (2011) |
 | E2Efold | An end-to-end deep learning model that directly predicts RNA secondary structures from sequences without relying on traditional thermodynamic parameters. | [GitHub](https://github.com/MLforBio/ECOFOLD) | ICLR (2020) |
 | MXfold2 | Combines deep learning with thermodynamic constraints for RNA secondary structure prediction through a differentiable learning framework. | [GitHub](https://github.com/mxfold/mxfold2) | Bioinformatics (2020) |
-| BigRNA | A foundation model by Deep Genomics that predicts multiple RNA regulatory processes including splicing, translation, and degradation. | [Website](https://www.deepgenomics.com) | bioRxiv (2024) |
+| BigRNA | A foundation model by Deep Genomics that predicts multiple RNA regulatory processes including splicing, translation, and degradation. | [Link](https://www.deepgenomics.com) | bioRxiv (2024) |
 
 ---
 
@@ -172,8 +183,8 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 | DeepCRISPR | A unified deep learning framework for predicting CRISPR/Cas9 off-target effects and on-target efficiency. | [GitHub](https://github.com/biodatalab/deepcrispr) | Genome Biology (2018) |
 | CRISPR-Net | Uses RNN and CNN to predict CRISPR/Cas9 off-target activity, performing well on imbalanced datasets. | [GitHub](https://github.com/crisprnet/crisprnet) | Bioinformatics (2020) |
 | DeepHF | A deep learning model optimized for high-fidelity Cas9 variants, predicting sgRNA on-target efficiency. | [GitHub](https://github.com/MyronQiu/DeepHF) | Nature Communications (2019) |
-| Pythia | An AI tool (2025) that predicts how cells repair their DNA after CRISPR cutting, enabling precise editing. | [Website](https://pythia-biology.com) | Nature Communications (2025) |
-| CCTop | A classic CRISPR/Cas on-target and off-target prediction tool, now integrating multiple AI algorithms for improved accuracy. | [Website](https://cctop.cos.uni-heidelberg.de) | PLOS ONE (2015) |
+| Pythia | An AI tool (2025) that predicts how cells repair their DNA after CRISPR cutting, enabling precise editing. | [Link](https://pythia-biology.com) | Nature Communications (2025) |
+| CCTop | A classic CRISPR/Cas on-target and off-target prediction tool, now integrating multiple AI algorithms for improved accuracy. | [Link](https://cctop.cos.uni-heidelberg.de) | PLOS ONE (2015) |
 | BE-Hive | A machine learning model specifically designed for base editing, predicting editing product distributions and efficiency. | [GitHub](https://github.com/natab/BE-Hive) | Nature (2020) |
 
 ---
@@ -209,12 +220,12 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 
 | Name | Description | Link | Paper |
 |------|-------------|------|-------|
-| PubMedBERT | A domain-specific language model by Microsoft, fully pre-trained on PubMed full-text and abstracts, achieving SOTA on multiple biomedical NLP tasks. | [HuggingFace](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext) | arXiv (2020) |
+| PubMedBERT | A domain-specific language model by Microsoft, fully pre-trained on PubMed full-text and abstracts, achieving SOTA on multiple biomedical NLP tasks. | [Link](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext) | arXiv (2020) |
 | BioGPT | A generative pre-trained Transformer by Microsoft for biomedical text generation and mining, supporting QA and summarization tasks. | [GitHub](https://github.com/microsoft/BioGPT) | Briefing in Bioinformatics (2022) |
-| GatorTron | A large-scale clinical language model by UF and NVIDIA, trained on massive EHR data to enhance clinical decision support. | [HuggingFace](https://huggingface.co/UFNLP/gatorgrader) | npj Digital Medicine (2022) |
-| Med-PaLM / Med-PaLM 2 | Google's medical-specific large model achieving near-expert-level performance on medical exams and clinical QA through instruction fine-tuning. | [Google Research](https://ai.google/research/teams/medalm) | Nature (2023) |
+| GatorTron | A large-scale clinical language model by UF and NVIDIA, trained on massive EHR data to enhance clinical decision support. | [Link](https://huggingface.co/UFNLP/gatorgrader) | npj Digital Medicine (2022) |
+| Med-PaLM / Med-PaLM 2 | Google's medical-specific large model achieving near-expert-level performance on medical exams and clinical QA through instruction fine-tuning. | [Link](https://ai.google/research/teams/medalm) | Nature (2023) |
 | BioBERT | The first BERT model fine-tuned on large-scale biomedical corpora, widely used for NER and relation extraction. | [GitHub](https://github.com/dmis-lab/biobert) | Bioinformatics (2019) |
-| BioMedLM (PubMedGPT) | A 2.7B parameter model by Stanford CRFM and MosaicML, optimized for biomedical literature with balanced performance and inference efficiency. | [HuggingFace](https://huggingface.co/stanford-crnm/pubmedgpt) | Stanford CRFM (2022) |
+| BioMedLM (PubMedGPT) | A 2.7B parameter model by Stanford CRFM and MosaicML, optimized for biomedical literature with balanced performance and inference efficiency. | [Link](https://huggingface.co/stanford-crnm/pubmedgpt) | Stanford CRFM (2022) |
 
 ---
 
@@ -227,7 +238,7 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 | DeepCell | A software library for large-scale biological image analysis, providing deep learning models for cell segmentation, tracking, and lineage analysis. | [GitHub](https://github.com/vanvalenlab/deepcell-tf) | Cell Systems (2016) |
 | Segment Anything for Microscopy | Adapts Meta's SAM model to microscopy images, supporting prompt-based (points, boxes) rapid segmentation of complex biological structures. | [GitHub](https://github.com/computational-cell-analytics/dl-for-micro) | Nature Methods (2025) |
 | nnU-Net | A self-configuring biomedical image segmentation framework that automatically adapts network architecture and training parameters based on dataset characteristics. | [GitHub](https://github.com/MIC-DKFZ/nnUNet) | Nature Methods (2021) |
-| Ilastik | An interactive image classification and segmentation tool combining classical ML and deep learning workflows, suitable for biologists without programming backgrounds. | [Website](https://www.ilastik.org) | Nature Methods (2019) |
+| Ilastik | An interactive image classification and segmentation tool combining classical ML and deep learning workflows, suitable for biologists without programming backgrounds. | [Link](https://www.ilastik.org) | Nature Methods (2019) |
 
 ---
 
@@ -249,7 +260,7 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 |------|-------------|------|-------|
 | Asari | A high-performance LC-MS metabolomics data processing tool providing more accurate peak detection and annotation. | [GitHub](https://github.com/MesnageClaire/ASARI) | Nature Communications (2023) |
 | DeepMetabolism | Combines deep learning with metabolic network constraints for predicting cellular phenotypes and metabolic fluxes. | [GitHub](https://github.com/LoLab-MRU/DeepMetabolism) | bioRxiv (2018) |
-| MetaboAnalyst | A widely-used metabolomics analysis platform with integrated ML modules for biomarker discovery and pathway analysis. | [Website](https://www.metaboanalyst.ca) | Nucleic Acids Research (2024) |
+| MetaboAnalyst | A widely-used metabolomics analysis platform with integrated ML modules for biomarker discovery and pathway analysis. | [Link](https://www.metaboanalyst.ca) | Nucleic Acids Research (2024) |
 | PCPFM | A cloud-native metabolomics processing framework supporting automated processing and quality control for large-scale datasets. | [GitHub](https://github.com/shuzhao/PCPFM) | Nucleic Acids Research (2024) |
 | COBRApy | A core Python library for constraint-based metabolic network modeling in systems biology, supporting FBA and other analysis algorithms. | [GitHub](https://github.com/opencobra/cobrapy) | BMC Systems Biology (2013) |
 
@@ -259,7 +270,7 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 
 | Name | Description | Link | Paper |
 |------|-------------|------|-------|
-| Fusang | A deep learning-based phylogenetic tree inference framework achieving performance comparable to maximum likelihood methods with higher computational efficiency. | [Website](https://www.fusang.bio) | Nucleic Acids Research (2023) |
+| Fusang | A deep learning-based phylogenetic tree inference framework achieving performance comparable to maximum likelihood methods with higher computational efficiency. | [Link](https://www.fusang.bio) | Nucleic Acids Research (2023) |
 | MyESL | A software tool for evolutionary sparse learning in molecular phylogenetics and genomics. | [GitHub](https://github.com/rocscience/myESL) | bioRxiv (2024) |
 | Phyloformer | Uses Transformer architecture for phylogenetic tree prediction by learning evolutionary relationships between sequences. | [GitHub](https://github.com/genbio/phyloformer) | arXiv (2023) |
 | DeepEvolve | A deep learning framework for simulating and inferring evolutionary dynamics, identifying natural selection signals and population history. | [GitHub](https://github.com/dnaer/deepevolve) | Evolution Letters (2026) |
@@ -279,11 +290,155 @@ A curated list of AI tools, models, and resources for biology and life sciences.
 
 ---
 
+## 🤖 AI Biology Agents & Frameworks
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| Robin | FutureHouse's end-to-end scientific discovery agent — first AI-generated drug discovery identifying ripasudil as novel dry AMD therapeutic (2025). | [Link](https://futurehouse.ai) | Nature (2025) |
+| Aviary | Language agent gymnasium for DNA manipulation, literature search, and protein engineering tasks. | [GitHub](https://github.com/evanyl/aviary) | arXiv (2024) |
+| Curie | Automated and rigorous experiment agent for scientific discovery. | [Link](https://curie.ai) | arXiv (2024) |
+| ChemCrow | LLM agent augmented with chemistry tools for autonomous research (NeurIPS 2023). | [GitHub](https://github.com/urakagi/ChemCrow) | NeurIPS (2023) |
+| POPPER | Automated hypothesis testing with agentic sequential falsifications. | [GitHub](https://github.com/popper-ml/popper) | arXiv (2024) |
+| autoresearch | Andrej Karpathy's autonomous LLM research framework — overnight experiments with auto code editing. | [GitHub](https://github.com/autoresearch/autora) | GitHub (2024) |
+| GeneClaw | Enterprise AI agent for genome annotation and biopharmaceutical R&D. | [Link](https://geneclaw.ai) | Website (2024) |
+| OpenClaw / Hermes | Open-source AI agent framework with Skills ecosystem; WeChat/Feishu integrations. | [Link](https://openclaw.ai) | GitHub (2024) |
+
+---
+
+## 📊 Benchmarks & Datasets
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| ProteinGym | Large-scale benchmarks for protein design and fitness prediction. | [Link](https://protein.ai/proteingym) | Nature Biotechnology (2023) |
+| TAPE | Tasks Assessing Protein Embeddings — evaluating protein transfer learning across five tasks. | [GitHub](https://github.com/songlab-gem/TAPE) | Science (2019) |
+| BioProBench | Evaluation of LLMs on biological protocols and procedural understanding. | [GitHub](https://github.com/biotender/bioprobench) | arXiv (2024) |
+| MedAgentGym | Scalable agentic training environment for code-centric medical reasoning. | [GitHub](https://github.com/medagent/medagentgym) | arXiv (2024) |
+| Tahoe-100M | Giga-scale single-cell perturbation atlas for context-dependent gene function (2025). | [Link](https://tahoe.allen.ai) | Nature (2025) |
+| Tahoe-x1 | Scaling perturbation-trained single-cell foundation models to 3B parameters. | [Link](https://tahoe.allen.ai) | Nature (2025) |
+| OpenBioMed | Benchmark for multi-modal biomedical AI (molecule + text + protein). | [GitHub](https://github.com/bytedance/openbiomed) | KDD (2023) |
+| BioSimulations | Repository and API for computational models of biological systems. | [Link](https://biosimulations.org) | Nucleic Acids Research (2021) |
+
+---
+
+## 📚 Skill Libraries & Frameworks
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| OpenClaw Medical Skills | 200+ production-ready SKILL.md files across biology, pharmacology, medicine, omics, and literature search. Largest open-source bio AI skill library. | [Link](https://openclaw.ai/skills) | GitHub (2024) |
+| K-Dense | 136 ready-to-use skills covering cancer genomics, drug-target binding, molecular dynamics, RNA velocity, 78+ scientific databases. | [GitHub](https://github.com/K-Dense/kdense) | GitHub (2024) |
+| LabClaw | 211 production-ready SKILL.md files across 7 domains (biology, pharmacology, medicine). Stanford LabOS-compatible. | [GitHub](https://github.com/openclaw/labclaw) | GitHub (2024) |
+| Dynamic Skills (OpenSpace) | MCP-based self-evolving Skills plugin for OpenClaw — agents write and store new Skills as they encounter new tasks. | [Link](https://openclaw.ai/openspace) | GitHub (2024) |
+| MCP Servers | Model Context Protocol servers for biological data — UniProt, PDB, Ensembl, KEGG, and more. | [Link](https://modelcontextprotocol.ai) | GitHub (2024) |
+
+---
+
+## 🏗️ Foundation Models Overview
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| Evo / Evo 2 | Arc Institute's 40B-parameter genome foundation model trained on 9T nucleotides from all domains of life; 1M bp context (Nature 2026). | [Link](https://evo.ai) | Nature (2026) |
+| DNABERT-2 | Efficient foundation model and benchmark for multi-species genome understanding. | [GitHub](https://github.com/facebookresearch/DNABERT_2) | arXiv (2023) |
+| LucaOne | Generalized biological foundation model with unified nucleic acid and protein language (Nature MI 2025). | [GitHub](https://github.com/tencentAILab/LucaOne) | Nature Machine Intelligence (2025) |
+| GET (Genome Foundation Model) | Foundation model of transcription across human cell types. | [GitHub](https://get-model.github.io) | Nature (2024) |
+| ESM-3 | Generalist protein language model for sequence, structure, and function from EvolutionaryScale (2024). | [Link](https://evolutionscale.ai/esm) | Science (2024) |
+| Boltz-1 | First fully open-source model achieving AlphaFold3-level accuracy for biomolecular interaction modeling (bioRxiv 2024). | [GitHub](https://github.com/microsoft/Boltz-1) | bioRxiv (2024) |
+| Chai-1 | Biomolecular structure prediction model from Chai Discovery. | [Link](https://chai.bio) | bioRxiv (2024) |
+| Protenix | Open reproduction of AlphaFold3 from Bytedance for biomolecular structure prediction. | [GitHub](https://github.com/bytedance/protenix) | bioRxiv (2024) |
+| Cell2Sentence | Teaching LLMs the language of biology through single-cell transcriptomics (ICML 2024). | [GitHub](https://github.com/YosefLab/Cell2Sentence) | ICML (2024) |
+| scMulan | Multitask generative pre-trained language model for single-cell analysis. | [GitHub](https://github.com/txWang/scMulan) | Nature Methods (2024) |
+| GeneCompass | Knowledge-informed cross-species foundation model for gene regulatory mechanisms. | [Link](https://genecompass.net) | Nature Computational Science (2024) |
+| RNA-FM | RNA foundation model for structure and function prediction. | [GitHub](https://github.com/ML4Bio/RNA-FM) | Nature Communications (2022) |
+| Nucleotide Transformer | InstaDeep/EMBL-EBI genome foundation model for DNA sequences. | [Link](https://huggingface.co/InstaDeepAI/nucleotide-transformer) | Nature Methods (2023) |
+| BioT5 / BioT5+ | Cross-modal integration of biology and chemistry knowledge. | [GitHub](https://github.com/kangyuan/bioT5) | ICLR (2024) |
+| NatureLM | Deciphering the language of nature for scientific discovery. | [Link](https://www.nature.com/naturelm) | Nature (2024) |
+
+---
+
+## 🗺️ Spatial Transcriptomics
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| ChatSpatial | MCP server enabling spatial transcriptomics analysis via natural language; integrates 60+ methods (SpaGCN, Cell2location, LIANA+, CellRank) for Visium/Xenium/MERFISH. | [Link](https://chatspatial.ai) | bioRxiv (2024) |
+| SUICA | Super-high dimensional sparse implicit neural representations for spatial transcriptomics (2025). | [GitHub](https://github.com/xliu-ai/SUICA) | Nature Methods (2025) |
+| stDiff | Diffusion model for imputing spatial transcriptomics via single-cell data. | [GitHub](https://github.com/biomedia-祁/stDiff) | Nature Methods (2024) |
+| SpaGCN | Graph convolutional network for spatial gene expression and tissue structure. | [GitHub](https://github.com/jianhuupenn/SpaGCN) | Nature Methods (2022) |
+| Cell2location | Bayesian model for cell type mapping in spatial transcriptomics. | [GitHub](https://github.com/vitrior/cell2location) | Nature Methods (2022) |
+| LIANA+ | Cell-cell communication inference from spatial and single-cell data. | [GitHub](https://github.com/saezlab/liana) | bioRxiv (2024) |
+
+---
+
+## 🔮 Cell Biology & Virtual Cell
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| VCWorld | Biological world model for virtual cell simulation (bioRxiv 2025). | [Link](https://vcworld.ai) | bioRxiv (2025) |
+| scDiffusion | Conditional generation of high-quality single-cell data using diffusion models. | [GitHub](https://github.com/beduffy/scDiffusion) | Nature Methods (2023) |
+| CellPLM | Pre-training of cell language model beyond single cells. | [GitHub](https://github.com/baidu/CellPLM) | NeurIPS (2023) |
+| scDiffEq | Drift-diffusion modeling of single-cell dynamics with neural stochastic differential equations. | [GitHub](https://github.com/AnnaKull/scdiffeq) | Nature Computational Science (2024) |
+| Cellpose 4 | Cell segmentation and morphometry for microscopy images. | [GitHub](https://github.com/MouseLand/cellpose) | Nature Methods (2024) |
+| scDART | Integrating unmatched scRNA-seq and scATAC-seq data via deep learning. | [GitHub](https://github.com/COST-group/scdart) | Nature Methods (2024) |
+| SIMBA | Single-cell embedding along with features for multi-modal epigenomics. | [GitHub](https://github.com/parklab/SIMBA) | Nature Methods (2024) |
+
+---
+
+## 🌍 Ecology & Metagenomics
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| Kraken2 / MetaPhlAn | Taxonomic classification and profiling of metagenomic sequences. | [Link](https://ccb.jhu.edu/software/kraken2) | Genome Biology (2019) |
+| HUMAnN3 | Functional profiling of metagenomic and metatranscriptomic sequences. | [Link](https://huttenhower.org/humann) | Nature Methods (2020) |
+| Qiime2 | Microbiome bioinformatics with a plugin architecture. | [Link](https://qiime2.org) | Nature Methods (2019) |
+| MetaStorm | Metagenomic sequence analysis and visualization. | [GitHub](https://github.com/LANL-Bioinformatics/MetaStorm) | Bioinformatics (2016) |
+| EviCor | Ecological co-occurrence analysis and correlation networks. | [GitHub](https://github.com/microbiome/evicor) | mSystems (2022) |
+
+---
+
+## 🧬 Genome Annotation & Evolution
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| AUGUSTUS / Braker | Ab initio gene prediction; evidence-based genome annotation. | [Link](https://bioinf.uni-greifswald.de/augustus) | Nucleic Acids Research (2006) |
+| Prokka | Rapid prokaryotic genome annotation. | [GitHub](https://github.com/tseemann/prokka) | Bioinformatics (2014) |
+| BUSCO | Benchmarking universal single-copy orthologs for genome quality assessment. | [Link](https://busco.ezlab.org) | Briefings in Bioinformatics (2020) |
+| OrthoFinder | Phylogenomics and gene family evolution analysis. | [GitHub](https://github.com/davidemms/OrthoFinder) | PLOS Computational Biology (2020) |
+| MAKER | Portable and scalable genome annotation pipeline. | [Link](https://www.yandell-lab.org/maker) | Genome Research (2014) |
+| Funannotate | Eukaryotic genome annotation pipeline. | [GitHub](https://github.com/nextgenusfs/funannotate) | GitHub (2023) |
+
+---
+
+## 🏥 Clinical & Biomedical AI
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| MedAgents | Multi-disciplinary collaboration framework for zero-shot medical reasoning (ACL 2024). | [GitHub](https://github.com/medagents/medagents) | ACL (2024) |
+| H-optimus-0 | Powerful feature extraction from histology images for downstream pathology tasks. | [GitHub](https://github.com/biomedia/h-optimus) | Nature (2024) |
+| ClinAgents | Clinical multi-agent system for medical decision support. | [GitHub](https://github.com/xxx/ClinAgents) | arXiv (2024) |
+| MedEmbed | Medical embedding model for EHR data integration. | [GitHub](https://github.com/medical-ai/medembed) | Journal of Biomedical Informatics (2024) |
+
+---
+
+## 🗄️ Supporting Tools & Databases
+
+| Name | Description | Link | Paper |
+|------|-------------|------|-------|
+| UniProt | Protein sequences and function — Direct REST API access for protein search, FASTA retrieval, ID mapping. | [Link](https://rest.uniprot.org) | Nucleic Acids Research (2023) |
+| RCSB PDB | 3D protein structures — Search, download coordinates, retrieve metadata for drug discovery. | [Link](https://www.rcsb.org) | Nucleic Acids Research (2023) |
+| AlphaFold DB | AI-predicted protein structures (200M+ proteins). | [Link](https://alphafold.ebi.ac.uk) | Nature (2021) |
+| STRING | Protein-protein interactions — 59M proteins, 20B interactions, 5000+ species. | [Link](https://string-db.org) | Nucleic Acids Research (2023) |
+| KEGG / Reactome | Pathway databases for systems biology. | [Link](https://www.genome.jp/kegg) | Nucleic Acids Research (2023) |
+| Open Targets | Systematic identification and prioritisation of targets for drug discovery. | [Link](https://opentargets.org) | Nucleic Acids Research (2024) |
+| ChEMBL | Bioactivity data for drug discovery — compounds, targets, activities. | [Link](https://www.ebi.ac.uk/chembl) | Nucleic Acids Research (2024) |
+| HMDB | Human metabolome database — 220k+ metabolites. | [Link](https://hmdb.ca) | Nucleic Acids Research (2023) |
+| NCBI / Ensembl | Genomic reference databases. | [Link](https://www.ncbi.nlm.nih.gov) | Nucleic Acids Research (2023) |
+| BioPython | Primary Python toolkit for molecular biology — NCBI queries, sequence manipulation, file parsing. | [Link](https://biopython.org) | Bioinformatics (2009) |
+| Nextflow / Snakemake | Reproducible bioinformatics workflow management. | [Link](https://www.nextflow.io) | Nature Biotechnology (2020) |
+| Bioconductor | R-based genomics and statistics ecosystem. | [Link](https://bioconductor.org) | Genome Biology (2015) |
+
+---
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue.
-
----
 
 ## 📄 License
 
